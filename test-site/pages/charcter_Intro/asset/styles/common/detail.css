@@ -1,0 +1,281 @@
+#pinkCircle {
+  width: 50px;
+  height: 50px;
+  background-color: #E58490;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9999; 
+  pointer-events: none; 
+	 
+}
+
+#loading{
+	width:100%;
+	height:100vh;
+	position: fixed;
+    z-index: 998;
+	display:none;
+}
+
+#loading .initial{
+	font-size: 14rem;
+	color: #fff;
+	position: fixed;
+    z-index: 999;
+	margin-left: 10%;
+	
+	
+}
+#loading img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display:block;
+}
+
+.fade-in {
+  opacity: 0; /* 초기에 숨김 */
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.1); /* 스크롤바 색상과 투명도 조절 */
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent; /* 스크롤바 트랙 투명도 조절 */
+}
+
+
+
+
+
+
+
+
+
+header {
+  z-index: 998;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	position:fixed;
+	width:100%;
+	 background-color: transparent;
+	   font-size: 12px;
+	padding:1.8rem;
+	transition: background-color 0.4 ease;
+}
+
+.logo >h1>a{
+    margin: 0;
+    color:#E58490;
+}
+
+a{
+	text-decoration: none;
+}
+
+nav{
+  
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right:50px;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E58490;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+
+section{
+	width:100%;
+	height: 100vh;
+	display:flex;
+	align-items: center;
+}
+
+#main-banner{
+     
+}
+#main-banner h1{
+	text-align:center;
+	color:#fff;
+	color: #E58490;
+	font-size:120px;
+	padding-left:5%;
+}
+#main-banner .main-banner-container{
+     height:80vh;
+	 width:90%;
+
+}
+#main-banner .main-banner-container >img{
+	 width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display:block;
+}
+
+#about{
+	height: 60vh;
+	width:100%;
+	
+}
+#about .about-text{
+	padding-left:10%
+}
+#about h2{
+	font-size: 28px;
+	margin-bottom:18px;
+	
+}
+#about p{
+	font-size:14px;
+	
+}
+#about .artist-sns-box{
+	margin-left: 40rem;
+	color:#43443F;
+}	
+#about .artist-sns-box li{
+	padding:10px;
+}
+
+#about a{
+	 color:#E58490;
+	
+}
+
+.box{
+  width:100%;
+  height:10vh;
+  background-color: #f0f0f0;
+  padding: 1rem;
+  margin-top: 1rem;
+ display:none;
+	
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  margin-top: -200rem; /* 하단 섹션을 화면 밖으로 이동 */
+}
+
+.more_btn{
+}
+
+/* 기본 버튼 스타일 */
+.more_btn{
+    display: inline-block;
+    padding: 20px 3px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+   border:none;
+	background-color: transparent;
+}
+
+
+.more_btn:hover {
+    color:#E58490;
+	
+    transition: background-color 0.5s ease;
+}
+
+
+
+
+#photos{
+    
+	display:flex;
+	align-items:center;
+	 transition: margin-top 0.5s ease-in-out;
+}
+#photos .archive-title{
+	font-size: 10rem;
+	color:black;
+	margin-right:5rem;
+	 padding-left: 3%;
+}
+#photos .archive-container{
+	width:50%;
+	height:100vh;
+	background-color:pink;
+	overflow:hidden;
+}
+#photos .archive-container img{
+	 width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display:block;
+}
+#music{
+	
+	overflow: hidden;
+
+}
+
+.album-list-box{
+  display: flex;
+  overflow-x: auto;
+ white-space: nowrap;
+	height: 45vh;
+  
+}
+
+.album {
+  flex: 0 0 auto;
+  width: 15%;
+  height: 70%;
+  padding: 30px;
+  margin-right: 20px;
+  background-color: #f0f0f0;
+ transition: transform 0.5s ease-in-out;
+}
+
+.album img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+	display:block;
+}
+
+
+
+
+
+/* 푸터 스타일링 */
+footer p{
+    background-color:#1F1E15;
+    color: #fff;
+    padding: 2.5em;
+    text-align: center;
+	font-size: 14px;
+}
